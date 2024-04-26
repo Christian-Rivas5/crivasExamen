@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="crivasExamen.Vistas.vRegistro"
+             Title="vRegistro">
+    <VerticalStackLayout
+        Spacing="15"
+ Padding="25">
+
+        <Label x:Name="lblUsuario"
+               HorizontalTextAlignment="End"
+               FontSize="18"/>
+
+        <Label Text="VENTANA DE REGISTRO"
+               HorizontalTextAlignment="Center"
+               FontSize="22"
+               TextColor="BLUE"/>
+
+        <Label Text="FECHA"
+       HorizontalTextAlignment="Start"
+       FontSize="14"
+       TextColor="Black"/>
+        
+        <DatePicker x:Name="dpFecha"
+                    Format="MM/dd/yyy"
+                    />
+        <Label x:Name="lblFecha"
+               FontSize="20"
+               TextColor="Red"/>
+
+        <Picker x:Name="pkPaises"
+                Title="PAIS"
+                HorizontalTextAlignment="Center"
+                SelectedIndexChanged="pkPaises_SelectedIndexChanged">
+            <Picker.Items>
+                <x:String>ECUADOR</x:String>
+                <x:String>BRAZIL</x:String>
+            </Picker.Items>
+        </Picker>
+        <Picker x:Name="pkCidaddes"
+        Title="CIUDAD"
+        HorizontalTextAlignment="Center"
+        SelectedIndexChanged="pkCidaddes_SelectedIndexChanged">
+            <Picker.Items>
+                <x:String>CUENCA</x:String>
+                <x:String>QUITO</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label 
+               Text="M-INICIAL"
+               HorizontalTextAlignment="Start"/>
+        <Entry x:Name="txtMinicial"
+               Placeholder="Ingrese el monto inicial"
+               Keyboard="Numeric"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="NOMBRE"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center"/>
+
+            <Entry x:Name="txtNombre"
+                   Placeholder="INGRESE SU NOMBRE"
+                   HorizontalTextAlignment="Start"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+
+            <Label Text="APELLIDO"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"/>
+
+            <Entry x:Name="txtApellido"
+                    Placeholder="INGRESE SU APELLIDO"
+                    HorizontalTextAlignment="Start"
+                    Grid.Row="2"
+                    Grid.Column="1"/>
+
+            <Label Text="EDAD"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"/>
+
+            <Entry x:Name="txtEdad"
+                    Placeholder="INGRESE SU EDAD"
+                    HorizontalTextAlignment="Start"
+                   Keyboard="Numeric"
+                    Grid.Row="2"
+                    Grid.Column="3"/>
+
+        </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            
+            <Button x:Name="btnCalcular"
+                      Text="Calcular Pmensual"
+                      Clicked="btnCalcular_Clicked"
+                      Grid.Row="1"
+                      Grid.Column="0"/>
+            <Button x:Name="btnPicker"
+                      Text="VER RESUMEN"
+                      Clicked="btnPicker_Clicked"
+                      Grid.Row="1"
+                      Grid.Column="1"/>
+        </Grid>
+       
+
+    </VerticalStackLayout>
+</ContentPage>

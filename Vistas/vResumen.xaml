@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="crivasExamen.Vistas.vResumen"
+             Title="vResumen">
+    <VerticalStackLayout>
+
+        <Label x:Name="lblUsuario"
+        HorizontalTextAlignment="End"
+        FontSize="18"/>
+
+
+        <Label 
+            Text="VENTANA RESUMEN"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+            <Label Text="NOMBRE"
+                   TextColor="Black"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="APELLIDO"
+                    TextColor="Black"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"/>
+            <Label Text="EDAD"
+                    TextColor="Black"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"/>
+            <Label Text="FECHA"
+                    TextColor="Black"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"/>
+            <Label Text="CIUDAD"
+                     TextColor="Black"
+                     Grid.Row="4"
+                     Grid.Column="0"
+                     VerticalTextAlignment="Center"
+                     HorizontalTextAlignment="Center"/>
+            <Label Text="PAIS"
+                      TextColor="Black"
+                      Grid.Row="5"
+                      Grid.Column="0"
+                      VerticalTextAlignment="Center"
+                      HorizontalTextAlignment="Center"/>
+            <Label Text="M-INICIAL"
+                      TextColor="Black"
+                      Grid.Row="6"
+                      Grid.Column="0"
+                      VerticalTextAlignment="Center"
+                      HorizontalTextAlignment="Center"/>
+            <Label Text="P-MENSUAL"
+                      TextColor="Black"
+                      Grid.Row="7"
+                      Grid.Column="0"
+                      VerticalTextAlignment="Center"
+                      HorizontalTextAlignment="Center"/>
+            <Label Text="P-TOTAL"
+                      TextColor="Black"
+                      Grid.Row="8"
+                      Grid.Column="0"
+                      VerticalTextAlignment="Center"
+                      HorizontalTextAlignment="Center"/>
+
+            <Button x:Name="btnCerrar"
+                      Text="CERRAR SESION"
+                      Clicked="btnCerrar_Clicked"
+                      Grid.Row="9"
+                      Grid.Column="0"/>
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

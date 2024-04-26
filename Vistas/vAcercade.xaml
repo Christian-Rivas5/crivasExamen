@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="crivasExamen.Vistas.vAcercade"
+             Title="vAcercade">
+    <VerticalStackLayout>
+        <Label x:Name="lblUsuario"
+    HorizontalTextAlignment="End"
+       FontSize="18"/>
+        <Label 
+            Text="ACERCA DEL SISTEMA!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="Estudiante: Christian Rivas"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start" />
+        <Label 
+            Text="Curso: 7mo A"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start" />
+        <Label 
+            Text="Carrera: Informatica en linea"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start" />
+        <Label 
+            Text="2024"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start" />
+
+    </VerticalStackLayout>
+</ContentPage>
